@@ -1,6 +1,34 @@
 {
   "sortedMiddleware": [],
   "middleware": {},
-  "functions": {},
+  "functions": {
+    "/page": {
+      "env": [
+        "NEXT_OTEL_VERBOSE",
+        "NEXT_PRIVATE_MINIMAL_MODE",
+        "__NEXT_TEST_MAX_ISR_CACHE",
+        "NEXT_PRIVATE_DEBUG_CACHE"
+      ],
+      "files": [
+        "server/server-reference-manifest.js",
+        "server/client-reference-manifest.js",
+        "server/flight-server-css-manifest.js",
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/font-loader-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/app/page.js"
+      ],
+      "name": "app/page",
+      "page": "/page",
+      "matchers": [
+        {
+          "regexp": "^/$"
+        }
+      ],
+      "wasm": [],
+      "assets": []
+    }
+  },
   "version": 2
 }
