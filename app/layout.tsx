@@ -1,14 +1,9 @@
 import "./globals.css";
 import { ReactNode } from "react";
 import type { Metadata } from "next";
-import { Syne } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import  faviconIMG  from "../public/favicon.ico";
 
-const syne = Syne({
-  subsets: ["latin"],
-  display: "block",
-  weight: ["400", "500", "600", "700", "800"],
-});
 
 export const metadata: Metadata = {
   title: "Donno",
@@ -68,10 +63,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="" />
       </head>
       <body
-        className={`${syne.className} scroll-smooth scrollbar-thin scrollbar-track-[#0E1016] scrollbar-thumb-[#212531]`}
+        className={`scroll-smooth scrollbar-thin scrollbar-track-[#0E1016] scrollbar-thumb-[#212531]`}
       >
         {children}
         <Analytics />

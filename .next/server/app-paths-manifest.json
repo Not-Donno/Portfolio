@@ -1,3 +1,5 @@
 {
-  "/page": "static/webpack/app/page.de1b2b9c8af5cd65.hot-update.js"
+  "/api/hello/route": "app/api/hello/route.js",
+  "/[...not_found]/page": "app/[...not_found]/page.js",
+  "/page": "app/page.js"
 }

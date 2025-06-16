@@ -1,12 +1,11 @@
 import AnimatedWords2 from "../animations/AnimatedWords2";
-import { monaSans } from "../fonts/monaSans";
 import AnimatedBody from "../animations/AnimatedBody";
 
 const Blog = () => {
   return (
     <section className="py-20 px-6" id="experience">
       <div className="max-w-4xl mx-auto text-center">
-          <h2 className={`text-4xl font-bold mb-6 ${monaSans.className}`}>
+          <h2 className={`text-4xl font-bold mb-6`}>
             🧭 Experience
           </h2>
           <p className="text-lg text-gray-500 mb-4">

@@ -2,6 +2,54 @@
   "sortedMiddleware": [],
   "middleware": {},
   "functions": {
+    "/api/hello/route": {
+      "env": [
+        "NEXT_OTEL_VERBOSE"
+      ],
+      "files": [
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/font-loader-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/app/api/hello/route.js"
+      ],
+      "name": "app/api/hello/route",
+      "page": "/api/hello/route",
+      "matchers": [
+        {
+          "regexp": "^/api/hello$"
+        }
+      ],
+      "wasm": [],
+      "assets": []
+    },
+    "/[...not_found]/page": {
+      "env": [
+        "NEXT_OTEL_VERBOSE",
+        "NEXT_PRIVATE_MINIMAL_MODE",
+        "__NEXT_TEST_MAX_ISR_CACHE",
+        "NEXT_PRIVATE_DEBUG_CACHE"
+      ],
+      "files": [
+        "server/server-reference-manifest.js",
+        "server/client-reference-manifest.js",
+        "server/flight-server-css-manifest.js",
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/font-loader-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/app/[...not_found]/page.js"
+      ],
+      "name": "app/[...not_found]/page",
+      "page": "/[...not_found]/page",
+      "matchers": [
+        {
+          "regexp": "^/(?<not_found>.+?)$"
+        }
+      ],
+      "wasm": [],
+      "assets": []
+    },
     "/page": {
       "env": [
         "NEXT_OTEL_VERBOSE",
