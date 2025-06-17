@@ -26,7 +26,7 @@ const NavBar = () => {
   data-blobity-tooltip="Hii"
   data-blobity-magnetic="false"
 >
-  <span className="text-sm font-bold">D</span>
+  <span className="text-sm font-bold">A</span>
 </Link>
 
       <Link
